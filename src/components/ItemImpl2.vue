@@ -23,8 +23,8 @@ export default class ItemImpl2 extends Vue {
     /** the number of likes given */
     @Prop() private likes!: number;
 
-    @module.Action(Actions.UPVOTE) upvote!: (id: number) => void;
-    @module.Action(Actions.DOWNVOTE) downvote!: (id: number) => void;
+    @module.Action(Actions.UPVOTE) private upvote!: (id: number) => void;
+    @module.Action(Actions.DOWNVOTE) private downvote!: (id: number) => void;
 }
 </script>
 

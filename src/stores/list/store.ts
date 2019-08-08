@@ -6,7 +6,7 @@ import { Mutation } from './mutation';
 import { Actions } from './action';
 
 
-const state: State = {
+const initialState: State = {
     items: {},
 };
 
@@ -55,7 +55,7 @@ const actions: ActionTree<State, any> = {
 };
 
 export default {
-  state,
+  state: initialState,
   mutations,
   actions,
   namespaced: true,
