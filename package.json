@@ -1,5 +1,5 @@
 {
-  "name": "vue-test",
+  "name": "vuex-dynamic-module-impl",
   "version": "0.1.0",
   "private": true,
   "scripts": {
