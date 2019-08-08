@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Items from '@/views/Items.vue';
+import ItemsImpl1 from '@/views/ItemsImpl1.vue';
 
 Vue.use(Router);
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'items',
-      component: Items,
+      name: 'impl1',
+      component: ItemsImpl1,
     },
   ],
 });
