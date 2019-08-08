@@ -18,6 +18,10 @@ export default class DynamicModule<T, R> {
         this.instance.$store.unregisterModule(this.namespace);
     }
 
+    public get state(): T {
+        return this.instance.$store.state[this.namespace];
+    }
+
     public action<ActionType>(action: ActionType, payload?: any): any {
         return this.instance.$store.dispatch(`${this.namespace}/${action}`, payload, {root: true});
     }
