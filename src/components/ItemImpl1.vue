@@ -19,7 +19,7 @@ import { Getters } from '@/stores/item/getter';
 import { Actions } from '@/stores/item/action';
 
 @Component
-export default class ItemComponent extends Vue {
+export default class ItemImpl1 extends Vue {
     /** ID of item */
     @Prop() private id!: number;
     /** module of the item */
