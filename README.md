@@ -2,6 +2,8 @@
 
 A Test Implementation for Vuex Dynamic Module.
 
+See it in action: [https://mangano-ito.github.io/vuex-dynamic-module-impl/](https://mangano-ito.github.io/vuex-dynamic-module-impl/)
+
 ![preview](./assets/preview.png)
 
 Dynamic Module enables you to focus on each item of list by providing items with individual `Store`s, so that you don't need to have a big `Map<K, V>`-like object in a single list `Store` nor find the item of interest by ID on every single `Mutation`.
@@ -58,7 +60,7 @@ const mutations = {
 };
 ```
 
-Find 2 `Store` implementation differences in `src/stores/{item, list}`, `src/views/` and `src/components`. See them in action with `yarn run serve`.
+Find 2 `Store` implementation differences in `src/stores/{item, list}`, `src/views/` and `src/components`.
 
 ## Project setup
 ```
