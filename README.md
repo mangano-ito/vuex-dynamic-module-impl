@@ -2,6 +2,8 @@
 
 A Test Implementation for Vuex Dynamic Module.
 
+![preview](./assets/preview.png)
+
 Dynamic Module enables you to focus on each item of list by providing items with individual `Store`s, so that you don't need to have a big `Map<K, V>`-like object in a single list `Store` nor find the item of interest by ID on every single `Mutation`.
 
 For example, let's have a static list `Store` like this (pseudo code):
