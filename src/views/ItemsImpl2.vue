@@ -26,10 +26,10 @@ export default class ItemsImpl2 extends Vue {
     /** IDs of items */
     private ids = [111, 5555, 3333, 4649];
 
-    @module.State items!: {};
-    @module.Action(Actions.INIT) init!: (ids: number[]) => void;
+    @module.State private items!: {};
+    @module.Action(Actions.INIT) private init!: (ids: number[]) => void;
 
-    created() {
+    protected created() {
         this.init(this.ids);
     }
 }
